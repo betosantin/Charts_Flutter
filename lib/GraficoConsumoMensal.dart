@@ -142,13 +142,14 @@ class _GraficoConsumoMensalState extends State<GraficoConsumoMensal> {
                         child: Container(
                             height: 2.0,
                             color: const Color(0x80d8d8d8),
-                            margin: const EdgeInsets.only(top: 5))),
+                            margin: const EdgeInsets.only(top: 1))),
                   ],
                 )
               ],
             )),
         Expanded(
           child: ListView.builder(
+            padding: EdgeInsets.only(top: 10),
             itemCount: widget.data.length,
             itemBuilder: (context, index) {
               return Padding(
